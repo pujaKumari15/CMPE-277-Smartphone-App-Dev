@@ -1,5 +1,6 @@
 package com.example.assignment1_activitylifecycle;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,12 +18,12 @@ public class ActivityB extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        threadCounter += 5;
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
+        threadCounter += 5;
     }
 
     @Override

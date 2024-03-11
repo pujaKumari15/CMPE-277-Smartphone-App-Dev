@@ -54,10 +54,12 @@ public class ActivityA extends AppCompatActivity {
     }
 
     public void startActivityB (View view) {
+        threadCounter += 5;
         startActivity(new Intent(ActivityA.this, ActivityB.class));
     }
 
     public void startActivityC (View view) {
+        threadCounter += 10;
         startActivity(new Intent(ActivityA.this, ActivityC.class));
     }
 

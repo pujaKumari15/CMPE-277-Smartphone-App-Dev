@@ -2,6 +2,7 @@ package com.example.assignment1_activitylifecycle;
 
 import static com.example.assignment1_activitylifecycle.ActivityA.threadCounter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,12 +19,12 @@ public class ActivityC extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        threadCounter += 10;
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
+        threadCounter += 10;
     }
 
     @Override
